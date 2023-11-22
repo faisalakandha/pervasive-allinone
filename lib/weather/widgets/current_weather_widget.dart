@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:myweather_app/model/weather_data_current.dart';
-import 'package:myweather_app/utils/custom_colors.dart';
+import 'package:allinoneproject/weather/model/weather_data_current.dart';
+import 'package:allinoneproject/weather/utils/custom_colors.dart';
 
 class CurrentWeatherWidget extends StatelessWidget {
   final WeatherDataCurrent weatherDataCurrent;

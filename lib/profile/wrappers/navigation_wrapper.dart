@@ -1,3 +1,5 @@
+import 'package:allinoneproject/quiz/screens/quiz_screen.dart';
+import 'package:allinoneproject/weather/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import '../screens/about.dart';
 import '../screens/experience.dart';
@@ -76,7 +78,7 @@ class _NavigationWrapperState extends State<NavigationWrapper> {
               leading: Icon(Icons.home),
               title: Text('Home'),
               onTap: () {
-                // Handle drawer item tap for Home
+                // Handle drawer item tap for Home`
                 Navigator.pop(context);
                 // Add your navigation logic here
               },
@@ -86,7 +88,20 @@ class _NavigationWrapperState extends State<NavigationWrapper> {
               title: Text('Weather'),
               onTap: () {
                 // Handle drawer item tap for Home
-                Navigator.pop(context);
+                        Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => HomeScreen()),
+                        );
+                // Add your navigation logic here
+              },
+            ),
+                                    ListTile(
+              leading: Icon(Icons.question_answer),
+              title: Text('Quiz'),
+              onTap: () {
+                // Handle drawer item tap for Home
+                        Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => QuizScreen()),
+                        );
                 // Add your navigation logic here
               },
             ),

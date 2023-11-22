@@ -1,6 +1,6 @@
-import 'package:myweather_app/model/weather_data_current.dart';
-import 'package:myweather_app/model/weather_data_daily.dart';
-import 'package:myweather_app/model/weather_data_hourly.dart';
+import 'package:allinoneproject/weather/model/weather_data_current.dart';
+import 'package:allinoneproject/weather/model/weather_data_daily.dart';
+import 'package:allinoneproject/weather/model/weather_data_hourly.dart';
 
 class WeatherData {
   final WeatherDataCurrent? current;
