@@ -1,3 +1,4 @@
+import 'package:allinoneproject/calculator/CalculatorScreen.dart';
 import 'package:allinoneproject/quiz/screens/quiz_screen.dart';
 import 'package:allinoneproject/weather/screens/home_screen.dart';
 import 'package:flutter/material.dart';
@@ -101,6 +102,17 @@ class _NavigationWrapperState extends State<NavigationWrapper> {
                 // Handle drawer item tap for Home
                         Navigator.of(context).pushReplacement(
                           MaterialPageRoute(builder: (context) => QuizScreen()),
+                        );
+                // Add your navigation logic here
+              },
+            ),
+                                  ListTile(
+              leading: Icon(Icons.question_answer),
+              title: Text('Calculator'),
+              onTap: () {
+                // Handle drawer item tap for Home
+                        Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => CalculatorScreen()),
                         );
                 // Add your navigation logic here
               },
